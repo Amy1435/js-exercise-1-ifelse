@@ -48,14 +48,22 @@
 // alert(mancia);
 
 // 1. *La Serata al Cinema*: Chiedi all'utente la loro età. Se hanno meno di 13 anni, dì loro che possono vedere solo film con classificazione PG. Se hanno 13 anni o più ma meno di 17, dì loro che possono vedere film con classificazione PG e PG-13. Se hanno 17 anni o più, dì loro che possono vedere tutti i film.
-let prEtà = prompt("Scivi la tua età");
-let età = prEtà;
-if (età < 13) {
-    alert("Puoi vedere solo film con classificazione PG.");
-} else {
-    if ((età = 13 && età < 17)) {
-        alert("Puoi vedere film con classificazione PG e PG-13.");
-    } else {
-        alert("Puoi vedere tutti i film.");
-    }
-}
+// let prEtà = prompt("Scivi la tua età");
+// let età = prEtà;
+// if (età < 13) {
+//     alert("Puoi vedere solo film con classificazione PG.");
+// } else {
+//     if ((età = 13 && età < 17)) {
+//         alert("Puoi vedere film con classificazione PG e PG-13.");
+//     } else {
+//         alert("Puoi vedere tutti i film.");
+//     }
+// }
+
+//2. *Il Calcolatore di Sconti*: Chiedi all'utente il prezzo originale di un articolo e la percentuale di sconto. Calcola l'importo dello sconto e il prezzo finale. Se la percentuale di sconto è superiore al 50, avvisa l'utente che si tratta di un ottimo affare.
+let domPrezOrig = prompt("Qual'è il prezzo originale di questo articolo?");
+let domPercArt = prompt("Qual'è la percentuale di sconto?");
+let prezzOriginale = domPrezOrig;
+let percentualeSconto = (parseFloat(domPercArt) / 100) * 100;
+let importoSconto = (prezzOriginale100 * percentualeSconto) / 100;
+alert(importoSconto);
