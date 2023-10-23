@@ -13,9 +13,28 @@
 
 // 3. *Il Convertitore di Temperatura*: Chiedi all'utente una temperatura in Fahrenheit, convertila in Celsius e visualizza il risultato.
 
-let domandaTemperatura = prompt(
-    "Quanti gradi ci sono oggi? (rispondi in Fahrenheit)"
+// let domandaTemperatura = prompt(
+//     "Quanti gradi ci sono oggi? (rispondi in Fahrenheit)"
+// );
+// let temperaturaFahrenheit = domandaTemperatura;
+// let conversioneCelsius = (temperaturaFahrenheit - 32) / 1.8;
+// alert("La temperatura in Celsius è di: " + conversioneCelsius);
+
+// 624. *Il Calcolatore di Voti*: Chiedi i voti del test di 3 studenti, calcola la media e visualizza il risultato.
+
+let domandaStudente1 = prompt(
+    "Che voto ai preso nel test di biologia? (studente 1)"
 );
-let temperaturaFahrenheit = domandaTemperatura;
-let conversioneCelsius = (temperaturaFahrenheit - 32) / 1.8;
-alert(conversioneCelsius);
+let domandaStudente2 = prompt(
+    "Che voto ai preso nel test di biologia? (studente 2)"
+);
+
+let domandaStudente3 = prompt(
+    "Che voto ai preso nel test di biologia? (studente 3)"
+);
+22;
+let votoStud1 = parseInt(domandaStudente1);
+let votoStud2 = parseInt(domandaStudente2);
+let votoStud3 = parseInt(domandaStudente3);
+let mediaVoti = (votoStud1 + votoStud2 + votoStud3) / 3;
+alert("La media dei voti è: " + mediaVoti);
