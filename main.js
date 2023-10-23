@@ -6,7 +6,16 @@
 // alert(guadagni);
 
 // 2. *Il Calcolatore di Età*: Chiedi all'utente il loro anno di nascita e calcola la loro età. Visualizza un messaggio con il risultato.
-let annoNascita = prompt("In che anno sei nato?");
-let anno = annoNascita;
-let età = 2023 - anno;
-alert(età);
+// let annoNascita = prompt("In che anno sei nato?");
+// let anno = annoNascita;
+// let età = 2023 - anno;
+// alert(età);
+
+// 3. *Il Convertitore di Temperatura*: Chiedi all'utente una temperatura in Fahrenheit, convertila in Celsius e visualizza il risultato.
+
+let domandaTemperatura = prompt(
+    "Quanti gradi ci sono oggi? (rispondi in Fahrenheit)"
+);
+let temperaturaFahrenheit = domandaTemperatura;
+let conversioneCelsius = (temperaturaFahrenheit - 32) / 1.8;
+alert(conversioneCelsius);
