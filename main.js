@@ -61,10 +61,30 @@
 // }
 
 //2. *Il Calcolatore di Sconti*: Chiedi all'utente il prezzo originale di un articolo e la percentuale di sconto. Calcola l'importo dello sconto e il prezzo finale. Se la percentuale di sconto è superiore al 50, avvisa l'utente che si tratta di un ottimo affare.
-let domPrezOrig = prompt("Qual'è il prezzo originale di questo articolo?");
-let domPercArt = prompt("Qual'è la percentuale di sconto?");
-let prezzOriginale = domPrezOrig;
-let percentualeSconto = (parseFloat(domPercArt) / 100) * 100;
-let importoSconto = (prezzOriginale * percentualeSconto) / 100;
-let prezzoFinale = prezzOriginale - importoSconto;
-alert(prezzoFinale);
+// let domPrezOrig = prompt("Qual'è il prezzo originale di questo articolo?");
+// let domPercArt = prompt("Qual'è la percentuale di sconto?");
+// let prezzOriginale = domPrezOrig;
+// let percentualeSconto = (parseFloat(domPercArt) / 100) * 100;
+// let importoSconto = (prezzOriginale * percentualeSconto) / 100;
+// let prezzoFinale = prezzOriginale - importoSconto;
+// alert(prezzoFinale);
+// if (percentualeSconto > 50) {
+//     alert("è un ottimo affare");
+// }
+// 10;
+//3. *Il Calcolatore di BMI*: Chiedi all'utente il loro peso (in chilogrammi) e la loro altezza (in metri). Calcola il loro BMI (peso / altezza^2). Se il loro BMI è inferiore a 18.5, dì loro che sono sottopeso. Se è tra 18.5 e 24.9, dì loro che hanno un peso normale. Se è 25 o superiore, dì loro che sono sovrappeso.
+let domPeso = prompt("Qual'è il tuo peso ? (in chilogrammi)");
+let domAltezza = prompt("Qual'è la tua altezza? (in metri)");
+let peso = parseFloat(domPeso);
+let altezza = parseFloat(domAltezza);
+let bmi = peso / (altezza * altezza);
+
+if (bmi < 18.5) {
+    alert("sei sottopeso");
+} else {
+    if (bmi >= 18.5 && bmi <= 24.9) {
+        alert("sei nella norma");
+    } else {
+        alert("sei sovrappeso");
+    }
+}
