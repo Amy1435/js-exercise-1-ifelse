@@ -65,5 +65,6 @@ let domPrezOrig = prompt("Qual'è il prezzo originale di questo articolo?");
 let domPercArt = prompt("Qual'è la percentuale di sconto?");
 let prezzOriginale = domPrezOrig;
 let percentualeSconto = (parseFloat(domPercArt) / 100) * 100;
-let importoSconto = (prezzOriginale100 * percentualeSconto) / 100;
-alert(importoSconto);
+let importoSconto = (prezzOriginale * percentualeSconto) / 100;
+let prezzoFinale = prezzOriginale - importoSconto;
+alert(prezzoFinale);
