@@ -79,12 +79,38 @@ let peso = parseFloat(domPeso);
 let altezza = parseFloat(domAltezza);
 let bmi = peso / (altezza * altezza);
 
-if (bmi < 18.5) {
-    alert("sei sottopeso");
+// if (bmi < 18.5) {
+//     alert("sei sottopeso");
+// } else {
+//     if (bmi >= 18.5 && bmi <= 24.9) {
+//         alert("sei nella norma");
+//     } else {
+//         alert("sei sovrappeso");
+//     }
+// }
+
+// 4. *Il Verificatore di Anno Bisestile*: Chiedi all'utente un anno. Se l'anno è divisibile per 4 e non è divisibile per 100, o se l'anno è divisibile per 400, allora è un anno bisestile. Altrimenti, non è un anno bisestile. Dì all'utente se l'anno che hanno inserito è un anno bisestile o no.
+
+// let domAnno = prompt("Inserisci un anno");
+
+//5. *L'Assegnatore di Voti*: Chiedi all'utente il loro punteggio del test. Se il loro punteggio è 90 o superiore, assegna loro un 'A'. Se è 80 o superiore ma inferiore a 90, assegna loro un 'B'. Se è 70 o superiore ma inferiore a 80, assegna loro un 'C'. Se è 60 o superiore ma inferiore a 70, assegna loro un 'D'. Se è inferiore a 60, assegna loro un 'F'.
+let domPunteggio = prompt("Qual'è stato il tuo punteggio sul test?");
+let punteggio = Number(domPunteggio);
+
+if (punteggio >= 90) {
+    alert("A");
 } else {
-    if (bmi >= 18.5 && bmi <= 24.9) {
-        alert("sei nella norma");
+    if (punteggio >= 80 && punteggio < 90) {
+        alert("B");
+    }
+
+    if (punteggio >= 70 && punteggio < 80) {
+        alert("C");
+    }
+
+    if (punteggio >= 60 && punteggio < 70) {
+        alert("D");
     } else {
-        alert("sei sovrappeso");
+        alert("E");
     }
 }
