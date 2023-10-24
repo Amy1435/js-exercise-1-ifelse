@@ -73,11 +73,11 @@
 // }
 // 10;
 //3. *Il Calcolatore di BMI*: Chiedi all'utente il loro peso (in chilogrammi) e la loro altezza (in metri). Calcola il loro BMI (peso / altezza^2). Se il loro BMI è inferiore a 18.5, dì loro che sono sottopeso. Se è tra 18.5 e 24.9, dì loro che hanno un peso normale. Se è 25 o superiore, dì loro che sono sovrappeso.
-let domPeso = prompt("Qual'è il tuo peso ? (in chilogrammi)");
-let domAltezza = prompt("Qual'è la tua altezza? (in metri)");
-let peso = parseFloat(domPeso);
-let altezza = parseFloat(domAltezza);
-let bmi = peso / (altezza * altezza);
+// let domPeso = prompt("Qual'è il tuo peso ? (in chilogrammi)");
+// let domAltezza = prompt("Qual'è la tua altezza? (in metri)");
+// let peso = parseFloat(domPeso);
+// let altezza = parseFloat(domAltezza);
+// let bmi = peso / (altezza * altezza);
 
 // if (bmi < 18.5) {
 //     alert("sei sottopeso");
@@ -93,7 +93,7 @@ let bmi = peso / (altezza * altezza);
 
 // let domAnno = prompt("Inserisci un anno");
 
-//5. *L'Assegnatore di Voti*: Chiedi all'utente il loro punteggio del test. Se il loro punteggio è 90 o superiore, assegna loro un 'A'. Se è 80 o superiore ma inferiore a 90, assegna loro un 'B'. Se è 70 o superiore ma inferiore a 80, assegna loro un 'C'. Se è 60 o superiore ma inferiore a 70, assegna loro un 'D'. Se è inferiore a 60, assegna loro un 'F'.
+// 5. *L'Assegnatore di Voti*: Chiedi all'utente il loro punteggio del test. Se il loro punteggio è 90 o superiore, assegna loro un 'A'. Se è 80 o superiore ma inferiore a 90, assegna loro un 'B'. Se è 70 o superiore ma inferiore a 80, assegna loro un 'C'. Se è 60 o superiore ma inferiore a 70, assegna loro un 'D'. Se è inferiore a 60, assegna loro un 'F'.
 let domPunteggio = prompt("Qual'è stato il tuo punteggio sul test?");
 let punteggio = Number(domPunteggio);
 
